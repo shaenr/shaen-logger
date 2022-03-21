@@ -58,11 +58,9 @@ def zero_divide_exception(x: int = 21, y: int = 0):
         out = x / y
     except ZeroDivisionError:
         slog.exception("Division by zero problem")
-    else:
-        return out
 
 
 if __name__ != "__main__":
-    slog = new_logger()
-
+    # slog = new_logger()
+    slog = get_slog()
 
